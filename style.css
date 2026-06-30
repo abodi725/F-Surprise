@@ -1,0 +1,156 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     -webkit-tap-highlight-color: transparent;
+     user-select: none;
+ }
+
+ body {
+     background: linear-gradient(135deg, #ffe5ec, #ffb3c6);
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     overflow: hidden;
+     position: relative;
+ }
+
+ .container {
+     background: rgba(255, 255, 255, 0.9);
+     padding: 30px;
+     border-radius: 20px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     max-width: 350px;
+     width: 90%;
+     z-index: 5;
+     transition: all 0.5s ease;
+ }
+
+ .gif-box {
+     font-size: 60px;
+     margin-bottom: 20px;
+     animation: bounce 1s infinite alternate;
+ }
+
+ @keyframes bounce {
+     to {
+         transform: translateY(-10px);
+     }
+ }
+
+ h1 {
+     color: #c9184a;
+     font-size: 24px;
+     margin-bottom: 30px;
+     line-height: 1.4;
+ }
+
+ .buttons-wrapper {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 60px;
+     position: relative;
+ }
+
+ .btn {
+     padding: 12px 35px;
+     font-size: 18px;
+     font-weight: bold;
+     border: none;
+     border-radius: 25px;
+     cursor: pointer;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+ }
+
+ #yes-btn {
+     background-color: #4caf50;
+     color: white;
+ }
+
+ #no-btn {
+     background-color: #ff4d6d;
+     color: white;
+     position: absolute;
+ }
+
+ /* واجهة الرسالة النهائية المخفية */
+ .success-box {
+     display: none;
+ }
+
+ .couple-img {
+     width: 130px;
+     height: 130px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 4px solid #ff4d6d;
+     margin-bottom: 15px;
+     box-shadow: 0 4px 15px rgba(201, 24, 74, 0.3);
+ }
+
+ .success-box h2 {
+     color: #c9184a;
+     font-size: 24px;
+     margin-bottom: 15px;
+ }
+
+ .success-box p {
+     color: #590d22;
+     font-size: 17px;
+     line-height: 1.6;
+ }
+
+ /* صندوق العداد */
+ .counter-container {
+     margin-top: 20px;
+     background: #fff0f3;
+     padding: 15px;
+     border-radius: 15px;
+     border: 1px solid #ffb3c6;
+ }
+
+ .counter-title {
+     color: #590d22;
+     font-size: 14px;
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ #birthday-counter {
+     font-size: 16px;
+     font-weight: bold;
+     color: #c9184a;
+     line-height: 1.5;
+ }
+
+ /* إرشادات المسح */
+ #clean-instruction {
+     position: fixed;
+     top: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+     background: rgba(201, 24, 74, 0.9);
+     color: white;
+     padding: 10px 20px;
+     border-radius: 20px;
+     font-size: 15px;
+     font-weight: bold;
+     z-index: 100;
+     display: none;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+     white-space: nowrap;
+ }
+
+ /* عناصر الورود */
+ .flower-particle {
+     position: fixed;
+     font-size: 35px;
+     cursor: pointer;
+     z-index: 50;
+     transition: opacity 0.3s ease, transform 0.3s ease;
+     transform: translate(-50%, -50%);
+ }

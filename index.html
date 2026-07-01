@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>مفاجأة بسيطة لبنتي الحلوة فطومة 🤔❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- عنصر الصوت للموسيقى -->
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <!-- نص إرشادي للمسح -->
+    <div id="clean-instruction">🧹 مسحي الشاشة بإصبعك الصغير الحلو مشان يروحو الوردات والقلوب وشتوفي المفاجأة!</div>
+
+    <div class="container" id="main-container">
+        <!-- الواجهة الأولى: السؤال -->
+        <div id="question-area">
+            <div class="gif-box">🥺</div>
+            <h1>بتحبيني؟؟ <br> (جاوبيني بصراحة!)</h1>
+            <div class="buttons-wrapper">
+                <button class="btn" id="yes-btn" onclick="startFlowerStorm()">نعم</button>
+                <button class="btn" id="no-btn">لا</button>
+            </div>
+        </div>
+
+        <!-- الواجهة الثانية: تظهر بعد تنظيف الشاشة -->
+        <div id="success-area" class="success-box">
+            <img src="us.jpg" alt="Our Beautiful Memory" class="couple-img">
+            <h2>متوقع هالشي! 🥰❤️</h2>
+            <p>وأنا كمان حبيبي بحبك كتير يروحي انتي✨🌹</p>
+
+            <!-- صندوق العداد التنازلي -->
+            <div class="counter-container">
+                <span class="counter-title">الوقت يلي باقي لعيد ميلاد بنتي هوي:</span>
+                <span id="birthday-counter">يحسب الآن...</span>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
